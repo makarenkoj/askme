@@ -45,7 +45,7 @@ class UsersController < ApplicationController
         text: 'Почём опиум для народа?', created_at: Date.parse('19.10.2019')
       )
     ]
-
+    @questions_count = @questions.count
     @new_question = Question.new
   end
 end

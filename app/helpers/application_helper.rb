@@ -10,4 +10,18 @@ module ApplicationHelper
       asset_path 'avatar.jpg'
     end
   end
+
+  #хелпер склонения существительных
+  def sklonenie(number, vopros, voprosa, voprosov)
+    return voprosov if (number % 100).between?(11, 14)
+
+    case number % 10
+    when 1 then
+      vopros
+    when 2..4 then
+      voprosa
+    else
+      voprosov
+    end
+  end
 end
