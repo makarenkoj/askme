@@ -5,7 +5,7 @@ class UsersController < ApplicationController
         id: 1,
         name: 'Yurii',
         username: 'makarenkoj',
-        avatar_url: 'https://super-avatara.ru/images/trueimg/pictures/69/F2546A44EA1E-69.gif'
+        avatar_url: 'https://super-avatara.ru/images/trueimg/pictures/16/835B7844D4EC-16.gif'
         ),
       User.new(
         id: 2,
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
   	@user = User.new(
   		name: 'Yurii',
   		username: 'makarenkoj',
-      avatar_url: 'https://super-avatara.ru/images/trueimg/pictures/69/F2546A44EA1E-69.gif'
+      avatar_url: 'https://super-avatara.ru/images/trueimg/pictures/16/835B7844D4EC-16.gif'
   		)
 
     @questions = [
