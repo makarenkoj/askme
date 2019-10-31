@@ -47,5 +47,7 @@ class UsersController < ApplicationController
     ]
     @questions_count = @questions.count
     @new_question = Question.new
+    @answers_count = @questions_count
+    @unanswered_count = @questions_count
   end
 end
