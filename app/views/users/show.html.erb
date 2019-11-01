@@ -42,15 +42,15 @@
     <div class="questions-list">
       <div class="user-statistics container text-center">
         <div class="column-1-3">
-          <h3><%= @questions_count %></h3>
-          <P><%= sklonenie(@questions_count, 'вопрос', 'вопроса', 'вопросов') %></P>
+          <h3 class="title-small"><%= @questions_count %></h3>
+          <p><%= sklonenie(@questions_count, 'вопрос', 'вопроса', 'вопросов') %></P>
         </div>
         <div class="column-1-3">
-          <h3><%= @answers_count %></h3>
+          <h3 class="title-small"><%= @answers_count %></h3>
           <p><%= sklonenie(@answers_count, 'ответ', 'ответа', 'ответов') %></p>
         </div>
         <div class="column-1-3 ">
-          <h3><%= @unanswered_count %></h3>
+          <h3 class="title-small"><%= @unanswered_count %></h3>
           <p><%= sklonenie(@unanswered_count, 'безответный', 'безответных', 'безответных') %></p>
         </div>
       </div>
