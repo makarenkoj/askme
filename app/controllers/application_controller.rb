@@ -33,3 +33,4 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, alert: 'Вам сюда низя!'
   end
 end
+
