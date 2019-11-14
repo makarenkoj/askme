@@ -42,7 +42,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     reset_session
-    redirect_to root_url, notice: 'Ваш акквунт удалён!'
+    redirect_to root_url, notice: 'Ваш аккаунт удалён!'
   end
 
   def show
