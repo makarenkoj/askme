@@ -5,6 +5,13 @@
       <%= question.text %>
     </div>
 
+    <%# Автор вопроса %>
+    <div class="buffer-bottom-large">
+      <% if question.author %>
+        <%= link_to "Вопрос oт @#{question.author.username}", user_path(question.author) %>
+      <% end %>
+    </div>
+
     <%# Текст ответа, если он есть %>
     <% if question.answer.present? %>
       <div class="question-answer text-lead">
