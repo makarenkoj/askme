@@ -16,6 +16,10 @@ gem 'bootsnap'
 
 gem 'listen'
 
+gem 'carrierwave'
+
+gem 'rmagick'
+
 group :production do
   gem 'pg'
 end
