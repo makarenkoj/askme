@@ -1,24 +1,40 @@
-# README
+***ASKME***
+===========
+Это приложение аналог [ask.fm](https://ask.fm/), социальная сеть разработаная в обучающих целях.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Любой может создать учётную запись и задать свой вопрос или отвечать на вопросы 
 
-Things you may want to cover:
+других пользователей. 
 
-* Ruby version
+Для запуска на локаоьной сети  вам понадобится:
+===========
+Ruby 2.6.3,
 
-* System dependencies
+Rails 5.2.3,
 
-* Configuration
+SQLite3,
 
-* Database creation
+скачать или клонировать репозиторий,
 
-* Database initialization
+открыть терминал или командную строку,
 
-* How to run the test suite
+ввести:
+```
+                      $ cd путь к папке с приложением/askme
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+в папке с игрой ввести:
 
-* Deployment instructions
+```
+                       $ bundle install --without production
 
-* ...
+                       $ bundle exec race db:migrate
+                       
+                       $ bundle exec rails s
+                       
+   ```                    
+                       
+ в брузе перейти на страницу http://localhost:3000.
+ 
+ Это приложение настроено для работы на [Heroku](https://aaaaask.herokuapp.com/).
+ 
